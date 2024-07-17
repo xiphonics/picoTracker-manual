@@ -1,1 +1,3 @@
-- Page footer goes here -
+---
+
+**Page footer goes here**
