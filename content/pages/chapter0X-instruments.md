@@ -1,12 +1,13 @@
 ---
 title: Instruments
+template: page
 ---
 
 # {{title}}
 
 ## Sampler
 
-### Support file formats
+### Supported file formats
 
 ## Synths
 
@@ -14,4 +15,4 @@ title: Instruments
 
 ### OPAL
 
-## Midi
+## MIDI

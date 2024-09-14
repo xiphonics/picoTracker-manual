@@ -1,14 +1,9 @@
 ---
-title: Welcome
+title: Getting Started
+template: page
 ---
 
 # {{title}}
-
-Welcome to picoTracker, a small mobile music making device based on the tracker workflow.
-
-But what is a "tracker"?
-
-Trackers are music production applications that started life on 16bit home computers such as the legendary Amiga 500. 
 
 ## Navigation
 
@@ -16,7 +11,10 @@ The picoTracker user interface is made up of a series of screens, which are laye
 
 ![image of screen map](/images/screenmap-example.png)
 
+On bootup, the picoTracker will start as the Song screen of the last previously opened project.
+
 You can navigate (aka move) between screens using the `[]` + `arrow` keys.
 
+### File Browser 
 
-{{> footer.md }}
+When selecting a sample wav file or 

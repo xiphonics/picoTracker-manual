@@ -1,6 +1,7 @@
 #!/bin/sh
+
 # builds the html and pdf outputs
 
-bin/picosite -s content 
+bin/picosite -a static -s content
 
 #TODO: weasyprint to process content

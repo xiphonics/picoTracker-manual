@@ -1,5 +1,6 @@
 ---
 title: Contents
+template: page
 ---
 
 # {{title}}
