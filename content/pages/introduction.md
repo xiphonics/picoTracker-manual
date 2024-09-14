@@ -33,5 +33,3 @@ The picoTracker is powered by an RP2040 microcontroller and supports the followi
 *  MicroSD cards upto 32GB for project & sample library storage
 *  USB-C for charging and simple drag&drop firmware upgrades
 
-
-{{> footer.md }}

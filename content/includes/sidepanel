@@ -15,6 +15,15 @@
         <a href="projects.html">
             <li>Projects</li>
         </a>
+        <a href="songs.html">
+            <li>Songs</li>
+        </a>
+        <a href="chains.html">
+            <li>Chains</li>
+        </a>
+        <a href="phrases.html">
+            <li>Phrases</li>
+        </a>
         <a href="instruments.html">
             <li>Instruments</li>
         </a>
@@ -36,8 +45,8 @@
         <li>
             <h2>Reference</h2>
         </li>
-        <a href="keypad-shortcuts.html">
-            <li>Keypad Combinations</li>
+        <a href="keypadcombos.html">
+            <li>Controls & Moves</li>
         </a>
         <a href="commands.html">
             <li>Commands List</li>

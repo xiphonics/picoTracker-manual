@@ -5,7 +5,71 @@ template: page
 
 ## Sampler
 
+
+TODO: screencap
+
+- **sample:** selects the .wav file to associate with the instrument. you can select the same sample in more than one instrument. if you tap A,A here it will take you to the Sample Import Screen (which lets you load new .WAV into your project).
+- **volume:**
+- **pan:** pans the instrument left or right (0x7F is center)
+- **root note**
+- **detune**
+- **drive:** This is a volume modification before crush, and the instruments volume is after the crush.
+- **crush:** decrease bit resolution
+- **downsample:** decrease the bit rate, get those low frequency aliasing whines. each increase in this value will downsample the original sample by a factor of 2
+- **cutoff:** filter cutoff frequency
+- **reso:** filter resonance frequency
+- **type:** this is where it gets a little trickier. The filter now supports continuous change from low pass to high pass. set type to 00 for low pazz. FF for hi-pass and 7f for Band pass (or is it notch? n0s must check). all intermediate values morph in between them.
+- **dist:** filter distortion. for the moment we have none & scream. i'm planning on maybe add a third choice that would make the filter behave a little better when resonance is set very high in the old/default mode
+
+- **interpolation:** Interpolation mode ('linear'/'none'): selects which interpolation mode is used when in between samples. linear interpols linearly while none takes the nearest neighbor. Use none when playing samples at low range to add some typical overtones.
+- **loop mode:** selects the looping mode.
+  - none will play sample from zero to end.
+  - loop will start at zero and loop from loopstart to end.
+  - looper sync will automatically tune a loop so that it plays exactly 16 bars. Use the root note to play twice faster/slower
+  - oscillator is a special mode where the loop selection (from loopstart to end) is taken as oscillator data and automatically tuned. Experiment with different settings, do not forget 'root note' is your friend to tune the oscillator back in a useful range
+- **start:** start point of the sample regardless of if loop is enabled; in hex
+- **loop Start:** start point of the sample when loop is enabled; in hex
+- **loop End:** end point of the sample; in hex. You can play samples backwards by setting the end value lower than the start!
+- **automation:** If On, the table play arrows will advance one row every time the instrument is triggered, and execute only the commands on the new rows. If this is Off, table behavior is normal (play arrows cruise around real fast).
+- **table:** Select a table the instrument will always run. Clone a table here: RT+(B,A). Make a new table here: A,A.
+
+
+## Sample Import Screen
+
+Accessible by hitting A,A on the “sample:” parameter in the Instrument Screen.
+
+All the samples that you may want to import into a project **must** be located in a folder named `samplelib` at the top-level of the sdcard. You can either put your samples in that directory or in sub-directories of it, allowing you to have a basic way of sorting your samples library. 
+
+Note: sub-directories will be sorted before files, but otherwise the files will be listed in an unspecified order (ie. not necessarily alphabetical order).
+
+For example:
+
+TODO: screencap
+
+When entering the import screen, the current folder is the library root folder `samplelib`. All samples (`.wav` files) in that folder are listed.
+
+Use Up/Down to select a sample and the Play button to start/stop preview playback of the sample.
+LT+Play to import the currently selected sample and RT+Left to exit out of the Import Dialog back to the Instrument Screen.
+
+Note: While there is no fixed limit for the number of files per sub-directory, exceding 96 sub-directories and/or 354 files per directory is likely to cause picotracker to potentially crash. Also please note that while FAT formatted sdcards can support upto *256* characters per filename, Picotracker only supports upto **128** and with only **ASCII** characters.
+
+
 ### Supported file formats
+
+## MIDI
+
+## Midi Instrument Screen
+
+TODO: screencap
+
+A midi instrument has the following settings:
+
+- **Channel** - This can be set 0x80 to 0x8F which is midi channel 1-16 respectively
+- **Volume** - The volume any NOTE ON will be sent to your device. FF=127, 00=00
+- **Length** - Sets note gate length in number of ticks.
+- **Automation** - On, the table play arrows will advance one row every time the instrument is triggered, and execute only the commands on the new rows. If this is Off, table behavior is normal (play arrows cruise around real fast).
+- **Table**- As above, select a table the instrument will always run. Clone a table here: RT+(B,A). Make a new table here: A,A.
+
 
 ## Synths
 
@@ -13,4 +77,3 @@ template: page
 
 ### OPAL
 
-## MIDI
