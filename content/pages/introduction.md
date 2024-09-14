@@ -3,8 +3,6 @@ title: Welcome
 template: page
 ---
 
-# Welcome
-
 Welcome to picoTracker, a small, portable music making device based on the tracker workflow.
 
 But what is a "tracker"?

@@ -3,8 +3,6 @@ title: Instruments
 template: page
 ---
 
-# {{title}}
-
 ## Sampler
 
 ### Supported file formats

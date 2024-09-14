@@ -3,8 +3,6 @@ title: Device Management
 template: page
 ---
 
-# {{title}}
-
 The device screen allows you to manage settings for the picoTracker device hardware itself.
 
 ![](device screen example screenshot)

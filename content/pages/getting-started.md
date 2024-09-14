@@ -3,8 +3,6 @@ title: Getting Started
 template: page
 ---
 
-# {{title}}
-
 ## Navigation
 
 The picoTracker user interface is made up of a series of screens, which are layed out in a "map" which is represented at the bottom right of each screen with a single letter representing each screen, along with highlighting with a different color which screen is currently being displayed on screen. For example below you can see the screen map with the Song screen (S) shown as being currently displayed.

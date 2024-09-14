@@ -1,31 +1,49 @@
-<div class="sidepanel">
-    <a class="title" href="#">Introduction</a>
-    
-    <a class="section" href="#">Supported Versions</a>
-    <a class="section" href="#">About this App</a>
-    <a class="section" href="#technology">Technology</a>
-
-    <div class="divider left"></div>
-
-    <a class="title" href="#gettingstarted">Getting Started</a>
-
-    <a class="section" href="#installingapp">Installing the App</a>
-        <a class="section" href="#openingapp">Opening the App</a>
-
-    <div class="divider left"></div>
-
-    <a class="title" href="#basicfeatures">Basic Features</a>
-
-    <a class="section" href="#basicfeatures">Feature 1</a>
-    <a class="section" href="#basicfeatures">Feature 2</a>
-    <a class="section" href="#feature3">Feature 3</a>
-
-    <div class="divider left"></div>
-
-    <a class="title" href="#advanced">Advanced Features</a>
-
-    <a class="section" href="#advanced">Feature A</a>
-
-    <div class="space double"></div>
-
-</div>
+<aside>
+    <ul class="sideNav">
+        <li>
+            <h2>General</h2>
+        </li>
+        <a class="selected" href="">
+            <li>Introduction</li>
+        </a>
+        <li>
+            <h2>Interface</h2>
+        </li>
+        <a href="getting-started.html">
+            <li>Getting Started</li>
+        </a>
+        <a href="projects.html">
+            <li>Projects</li>
+        </a>
+        <a href="instruments.html">
+            <li>Instruments</li>
+        </a>
+        <a href="grooves.html">
+            <li>Grooves</li>
+        </a>
+        <a href="tables.html">
+            <li>Tables</li>
+        </a>
+        <a href="renders.html">
+            <li>Renders and stems</li>
+        </a>
+        <a href="mixer.html">
+            <li>The Mixer</li>
+        </a>
+        <a href="device.html">
+            <li>Device settings</li>
+        </a>
+        <li>
+            <h2>Reference</h2>
+        </li>
+        <a href="keypad-shortcuts.html">
+            <li>Keypad Combinations</li>
+        </a>
+        <a href="commands.html">
+            <li>Commands List</li>
+        </a>
+        <a href="midi.html">
+            <li>MIDI Implementation</li>
+        </a>
+    </ul>
+</aside>

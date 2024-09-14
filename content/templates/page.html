@@ -5,30 +5,15 @@
 {{> header }}
 
 <body>
-    <div class="navbar clear nav-top">
-        <div class="row content">
-            <a href="#"><img class="logo" src="images/logo.svg"></a>
-            <a class="right" style="text-decoration: underline;" href="#"><i class="fas fa-book"></i>&nbsp;
-                Documentation</a>
-            <a class="right" href="mailto:yourapp@email.com" target="_blank"><i class="fas fa-paper-plane"></i>&nbsp;
-                yourapp@email.com</a>
-        </div>
-    </div>
+    {{> sidepanel }}
 
-    <div class="container clear">
-        <div class="row wrapper">
 
-            {{> sidepanel }}
+    <article>
+        <h1 class="topic">{{title}}</h1>
 
-            <div class="right-col">
+        {{ body }}
+    </article>
 
-                {{ body }}
-
-                <div class="doublespace"></div>
-                <div class="divider" style="width:24%; margin:30px 0;"></div>
-            </div>
-        </div>
-    </div>
 </body>
 
 </html>
