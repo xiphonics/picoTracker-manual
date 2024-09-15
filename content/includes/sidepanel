@@ -3,7 +3,7 @@
         <li>
             <h2>General</h2>
         </li>
-        <a class="selected" href="">
+        <a href="introduction.html">
             <li>Introduction</li>
         </a>
         <li>
