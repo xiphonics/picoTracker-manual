@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "xiphonics-web"
+  },
+  "targets": {
+    "xiphonics-web": {
+      "hosting": {
+        "ptmanual": [
+          "picotracker-manual"
+        ]
+      }
+    }
   }
 }
