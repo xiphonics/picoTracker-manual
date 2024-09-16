@@ -5,10 +5,12 @@
   "targets": {
     "xiphonics-web": {
       "hosting": {
-        "ptmanual": [
+        "xiphonics-web": [
           "picotracker-manual"
         ]
       }
     }
-  }
+  },
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
 }
