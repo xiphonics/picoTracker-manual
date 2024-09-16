@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "target": "picotracker-manual",
     "public": "output",
     "ignore": [
       "firebase.json",
