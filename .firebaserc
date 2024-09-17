@@ -3,9 +3,9 @@
     "default": "xiphonics-web"
   },
   "targets": {
-    "pt-manual-hosting": {
+    "xiphonics-web": {
       "hosting": {
-        "xiphonics-web": [
+        "manual": [
           "picotracker-manual"
         ]
       }
