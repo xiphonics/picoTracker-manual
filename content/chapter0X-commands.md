@@ -1,6 +1,0 @@
----
-title: FX Commands
----
-
-# {{title}}
-

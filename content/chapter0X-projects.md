@@ -1,6 +1,0 @@
----
-title: Project Management
----
-
-# {{title}}
-
