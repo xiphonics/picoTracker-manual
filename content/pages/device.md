@@ -11,8 +11,19 @@ The device screen allows you to manage settings for the picoTracker device hardw
 
 ## MIDI
 
-- **midi:** Lists the picoTracker MIDI interfaces available (currently only TRS output is supported)
-- **midi sync:** Options to enable different settings for MIDI clock sync messages output.
+- **MIDI device:** Lists the picoTracker MIDI interfaces available. Available options are: None, TRS, USB, TRS+USB
+- **MIDI sync:** Option to enable different settings for MIDI clock sync messages output.
+
+## Line Out Mode (1st Edition RP2040 model only)
+
+On first edition picoTrackers, the audio output can be set to one of 3 amplification levels to make the audio level output more useful for Line Level output or Headphone output. The 3 possible settings are: 
+* `HP Low`
+* `HP High`
+* `Line Level`
+
+**NOTE: A reboot of the picoTracker is required to apply the newly changed audio output level!** 
+
+**PLEASE exercise caution when using earphones or headphones!*
 
 ## Color Themes
 
@@ -22,7 +33,7 @@ The following colors can be configured and are listed with their default setting
 
 | Name | Default | Use
 | -------- | ------- | -------
-BACKROUND|0F0F0F
+BACKROUND|0F0F0F| Background color on all screens
 FOREGROUND|ADADAD|text and cursor in cursor
 HICOLOR1|846F94|row count in song screen
 HICOLOR2|6B316B|inverted highlight, eg. "Song" screen label 

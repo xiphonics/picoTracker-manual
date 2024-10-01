@@ -10,47 +10,30 @@ The picoTracker user interface is made up of a series of screens, which are laye
 
 ### Screen Map
 
-```
-   _-------_                       _-------_
-  |         |                     |         |
-  |    P    |                     |    G    |
-  |         |                     |         |
-   project--                       groove---
-       ^                               ^
-       v                               v
-   _-------_       _-------_       _-------_       _-------_
-  |         |     |         |     |         |     |         |
-  |    S    | <-> |    C    | <-> |    P    | <-> |    I    |
-  |         |     |         |     |         |     |         |
-   song-----       chain----       phrase---       instrument
-                                       ^               ^
-                                       v               v
-                                   _-------_       _-------_
-                                  |         |     |         |
-                                  |    T    | <-> |    T    |
-                                  |         |     |         |
-                                   table----       table----
-```
-
-![image of screen map](/images/screenmap-example.png)
+![image of screen map](/image/screenmap.png)
 
 On bootup, the picoTracker will start on the Song screen of the last previously opened project.
 
 The picoTrackers keypad layout resembles a typical old console game controller.
 
-You can navigate (aka move) between screens using the `[]` + `arrow` keys.
+You can navigate (aka move) between screens using the `[NAV]+[UP/DOWN/LEFT/RIGHT]` keys.
 
 To get to the chain screen, you need to have your cursor on a chain in the song. To get to the phrase screen, you need to have your cursor on a pattern in the chain screen.
 
-## Playback Modes and Controls
+### Playback Modes and Controls
 
-There are two modes for playback, Song and Live. The controls in each mode differ slightly.
-You can switch between the modes by hitting B+LEFT/RIGHT in the Song screen.
+When you are on the Song screen, there are two modes for playback, Song Mode and Live Mode. The controls in each mode differ slightly.
+
+You can switch between the modes by hitting `[ENTER]+[LEFT/RIGHT]` keys in the Song screen.
 
 ### File Browser 
 
-When selecting a sample wav file or 
+When selecting a sample wav file or project file you enter the file browser view.
+
+When in the Project File Browser view, use the `[UP]` and `[DOWN]` arrow keys to navigate through the list of project available and press [EDIT] to open the currently selected (highlighted) a project. 
+
+When in the wave sample File Browser,  use the `[UP]` and `[DOWN]` arrow keys to navigate through the list of available sample files and subdirectories, subdirectories are indciated with a `/` prefix. Press [EDIT] to enter a subdirectory, you can go back to the parent directory by navigating to the `/..` entery and pressing [ENTER]. Press [PLAY] to audition the currently selected sample wave file. To import the currently selected wave file press [ALT]+[PLAY]. At any time, you can return to the instrument screen from the sample file browser by pressing [NAV]+[LEFT].
 
 
 ## Shutdown
-You can just unplug the machine any time you want other than when saving a project (which is an extremely brief moment). Save your work first if you care about it.
+You can just unplug the machine any time you want other than when saving a project (which is an extremely brief moment). **Save your work first if you care about it.**

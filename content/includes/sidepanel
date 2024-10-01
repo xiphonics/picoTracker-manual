@@ -52,6 +52,9 @@
         <a href="commands.html">
             <li>Commands List</li>
         </a>
+        <a href="scales.html">
+            <li>Scales List</li>
+        </a>
         <a href="midi.html">
             <li>MIDI Implementation</li>
         </a>
