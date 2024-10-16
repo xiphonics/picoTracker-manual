@@ -5,8 +5,7 @@ template: page
 
 ## Sampler
 
-
-TODO: screencap
+![screen capture of sampler screen](/image/sample-screen-small.png)
 
 - **sample:** selects the .wav file to associate with the instrument. you can select the same sample in more than one instrument. if you tap A,A here it will take you to the Sample Import Screen (which lets you load new .WAV into your project).
 - **volume:**
@@ -44,7 +43,7 @@ Note: sub-directories will be sorted before files, but otherwise the files will 
 
 For example:
 
-TODO: screencap
+![screen capture of sample screen](/image/browser-files-screen-small.png)
 
 When entering the import file browser, the current folder is the library root folder `/samples`. All samples (`.wav` files) in that folder are listed.
 
@@ -61,7 +60,7 @@ At any time, you can return to the instrument screen from the sample file browse
 
 ## Midi Instrument Screen
 
-TODO: screencap
+![screen capture of MIDI instrument screen](/image/midi-screen-small.png)
 
 A MIDI instrument has the following settings:
 
@@ -78,3 +77,12 @@ A MIDI instrument has the following settings:
 
 ### OPAL
 
+![screen capture of OPAL instrument screen](/image/opal-screen-small.png)
+
+The OPAL instrument is a emulation of the OPL chip soundcards of the PC DOS era like the classic ADLib and SoundBlaster. The sound architecture of the OPL chips is quite simple if a bit unusual in places. The OPL comprises of a number of monophonic "channels" (ie. voices) each made up of 2 FM operators that can be in configured for either standard 2 OP FM or in parallel as 2 additive oscillators. Each operator can have one of 8 different waveforms as supported by the OPL3 instead of just a simple sine or set of 4 modified sines as was supported by the original OPL and the OPL2 respectively.
+
+The OPAL instrument has settings that affect the emulated OPL chip as a while, some that affect a channel and others the affect a specific operator within a channel.
+
+On the OPAL instrument screen,you select which chann
+
+The picoTracker currently only supports up to 2 channels, so while more than 2 OPAL instruments can be created, they can only control one of the 2 available channels. Likewise because wash of the 2 channels is a single monophonic voice, using the same channel simultaneously in the picoTracker sequencer will work as if you were controlling an external monophonic synth via MIDI output and cause the following notes to cut off the previously playing note on that OPAL channel.
