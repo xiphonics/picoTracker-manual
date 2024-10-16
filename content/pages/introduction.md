@@ -14,22 +14,22 @@ Trackers later evolved to also run on devices such as the Gameboy as popularised
 
 The picoTracker features include:
 
-* 6 song channels
+* 8 song channels
 * 128 chains
 * 128 phrases
 * 32 tables
 * 16 Sample instruments
 * 16 MIDI instruments
-* 8 MB sample memory
+* Upto 7 MB of sample memory per open project
 * 8 or 16bit samples up to 44.1kHz, mono or stereo
 * 16bit 44.1kHz stereo audio output
 
 The picoTracker is powered by an RP2040 microcontroller and supports the following hardware: 
 
 *  Headphone/Lineout
-*  TRS MIDI In & Out
+*  TRS MIDI In & Out, USB MIDI Out
 *  Bright 320x240 LCD display
-*  8 MB of flash per project sample storage
+*  8MB of Flash
 *  MicroSD cards upto 32GB for project & sample library storage
 *  USB-C for charging and simple drag&drop firmware upgrades
 

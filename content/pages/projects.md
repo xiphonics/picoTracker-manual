@@ -12,6 +12,7 @@ On the project screen you change various settings of the current project, save t
 - **Tempo:**: Can be set between 60bpm [0x3c] and 400bpm [0x190]. Resolution aligned to LSDJ.
 - **Master:** Main volume goes from 10% to 200%.
 - **Transpose:** Live transposition of every triggered instruments.
+- **Scale:** Set the scale that will applied to all notes entered in the project. When entering a note in the Phrase screen, you will only be able to enter notes that belong to the selected scale. See [the reference](scales.html) for a list of all available scales.
 
 ## Current Project optimisation
 
@@ -23,5 +24,8 @@ On the project screen you change various settings of the current project, save t
 
 ## Project Management
 
-- **Load** Brings you back to the Selector Screen.
-- **Save** Save the work you do, and save frequently! The cursor will disappear while the data is being written.
+- **project:** Displays the current name of the project and allows you to edit it
+- **Load** Go to the project file browser to load a different project
+- **Save** Save the current project **NOTE:** *saving currently cannot be done during playback.*
+- **New** *REPLACE* the current project with a new, *Blank* project.  
+- **Random** *RENAME* the current project with a new, *Randomly generated* name.  

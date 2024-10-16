@@ -3,14 +3,19 @@ title: Controls & Moves
 template: page
 ---
 
-![labeled photo of Picotracker keymapping](image/pico-style-keymap.png)
+![labeled photo of Picotracker keymapping](image/pT-buttonMap.png)
 
 The keyboard layout resembles a typical old console game controller
 
-- Arrow keys: 
-- A and B:
-- LT and RT: these are modifier keys for A, B and Arrow keys. They are designed to modify the opposite keys to their location, so LT will modify the Arrow keys and RT will modify A and B (there are exceptions).
-- Play: play start/stop.
+* Arrow keys
+* NAV (RT)
+* ALT (LT)
+* ENTER (A)
+* EDIT (B)
+* Play (Start)
+
+The NAV ([]) and ALT keys are modifier keys for the ENTER, EDIT and Arrow keys. They are designed to modify the opposite keys to their location, so ALT will modify the Arrow keys and NAV will modify A and B (there are exceptions).
+
 
 ## Basic Editing & Navigation
 - ARROWs: In screen navigation.

@@ -198,3 +198,7 @@ footer {
 footer a {
     color: #626570;
 }
+/* page specific rules */
+#screen-map+p>img {
+    width: 60%;
+}
