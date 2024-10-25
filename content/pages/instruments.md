@@ -73,16 +73,46 @@ A MIDI instrument has the following settings:
 
 ## Synths
 
-### CSID
+### SID
+
+![screen capture of SID instrument screen](/image/sid-screen-small.png)
+
+* **VPW:**
+* **WF:**
+* **Sync:**
+* **Ring:**
+* **ADSR:**
+* **filter:**
+* **Flt cut:**
+* **Flt res:**
+* **Flt mode:**
+* **volume:**
+
 
 ### OPAL
 
 ![screen capture of OPAL instrument screen](/image/opal-screen-small.png)
 
-The OPAL instrument is a emulation of the OPL chip soundcards of the PC DOS era like the classic ADLib and SoundBlaster. The sound architecture of the OPL chips is quite simple if a bit unusual in places. The OPL comprises of a number of monophonic "channels" (ie. voices) each made up of 2 FM operators that can be in configured for either standard 2 OP FM or in parallel as 2 additive oscillators. Each operator can have one of 8 different waveforms as supported by the OPL3 instead of just a simple sine or set of 4 modified sines as was supported by the original OPL and the OPL2 respectively.
+The OPAL instrument is an emulation of the FM synth "retro soundcards" of the PC DOS era. Each "OPAL" instrument is made up of 2 FM operators that can be in configured for either standard 2 OP FM or in parallel as 2 additive oscillators. Each operator can have one of 8 different waveforms as shown below.
 
-The OPAL instrument has settings that affect the emulated OPL chip as a while, some that affect a channel and others the affect a specific operator within a channel.
+The OPAL instrument has settings for both the instrument as a whole and per each of the 2 operators.
 
-On the OPAL instrument screen,you select which chann
+The picoTracker currently only supports up to 3 OPAL instruments. Because each of the instruments is a single monophonic voice, using the same instrument simultaneously in the picoTracker 8 track sequencer will work as if you were controlling an external monophonic synth via MIDI output and cause the following notes to cut off the previously playing note on that OPAL instrument.
 
-The picoTracker currently only supports up to 2 channels, so while more than 2 OPAL instruments can be created, they can only control one of the 2 available channels. Likewise because wash of the 2 channels is a single monophonic voice, using the same channel simultaneously in the picoTracker sequencer will work as if you were controlling an external monophonic synth via MIDI output and cause the following notes to cut off the previously playing note on that OPAL channel.
+### Instrument wide settings
+
+* **Algorithm:** Select either 2 Operator FM `(1*2)` or Additive `(1+2)`
+* **Deep tremelo/vibrato:** Enable/disable Deep tremelo or vibrato effect
+* **Feedback:** Turn on/off feedback for Operator 1
+
+### Per Operator settings
+
+* **Level:** Operator output level **attenuation**, hence 0 is *highest* output level
+* **Multiplier:** Frequency multiplier, `0=1/2, 1=1, 2=2, 3=3` etc
+* **A/D/S/R:** Attack/Decay/Sustain/Release, each is single digit 0-15 value
+* **Shape:** Waveform share, 8 to choose from, see waveform drawings below
+* **TR/VB/SU/KSR:**  Tremelo, Vibrato, Sustain and Envelope Scaling (KSR)
+* **Keyscale:** Attenuates output level towards higher pitch: `1=3.0 dB/oct, 2=1.5 dB/oct, 3=6.0 dB/oct`
+
+![screen capture of OPAL instrument screen](/image/opal-waveforms-small.png)
+

@@ -20,6 +20,8 @@ The picoTracker features include:
 * 32 tables
 * 16 Sample instruments
 * 16 MIDI instruments
+* 3 emulated "SID" synth instruments
+* 3 emulated "retro PC" 2 Operator FM synth instruments 
 * Upto 7 MB of sample memory per open project
 * 8 or 16bit samples up to 44.1kHz, mono or stereo
 * 16bit 44.1kHz stereo audio output
@@ -31,5 +33,11 @@ The picoTracker is powered by an RP2040 microcontroller and supports the followi
 *  Bright 320x240 LCD display
 *  8MB of Flash
 *  MicroSD cards upto 32GB for project & sample library storage
-*  USB-C for charging and simple drag&drop firmware upgrades
+*  USB-C for MIDI, charging and simple drag&drop firmware upgrades
 
+
+## Acknowledgements
+
+As with any big open source undertaking, this project would not have been possible without standing on the shoulders of many great open source projects and libraries. We would especially like to thank [Marc Resibois aka Nostromo](https://github.com/Mdashdotdashn), the creator of LittleGPTracker and making it available under a liberal open source license. 
+
+We would also like to thank Damien Guard for permission to use 2 of his amazing [zx-origins font collection](https://damieng.com/typography/zx-origins/).
