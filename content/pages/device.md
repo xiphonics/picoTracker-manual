@@ -7,7 +7,7 @@ The device screen allows you to manage settings for the picoTracker device hardw
 
 **Note:** the picoTracker saves its device settings to the SDCard so if you replace the sdcard in your picoTracker, the device configuration will reset to factory defaults.
 
-![](device screen example screenshot)
+![screen capture of device screen](/image/device-screen-small.png)
 
 ## MIDI
 
@@ -24,6 +24,14 @@ On first edition picoTrackers, the audio output can be set to one of 3 amplifica
 **NOTE: A reboot of the picoTracker is required to apply the newly changed audio output level!** 
 
 **PLEASE exercise caution when using earphones or headphones!*
+
+## Remote UI
+
+This setting enables or disables sending commands to a computer attached via USB to the picoTracker running an a "remote UI" application that can mirror the display from the picoTracker.
+
+## Font
+
+The font used for the picoTracker user interface. Choice of the "standard" or "bold" font.
 
 ## Color Themes
 

@@ -75,14 +75,30 @@ A MIDI instrument has the following settings:
 
 ### CSID
 
+![screen capture of OPAL instrument screen](/image/sid-screen-small.png)
+
 ### OPAL
 
 ![screen capture of OPAL instrument screen](/image/opal-screen-small.png)
 
-The OPAL instrument is a emulation of the OPL chip soundcards of the PC DOS era like the classic ADLib and SoundBlaster. The sound architecture of the OPL chips is quite simple if a bit unusual in places. The OPL comprises of a number of monophonic "channels" (ie. voices) each made up of 2 FM operators that can be in configured for either standard 2 OP FM or in parallel as 2 additive oscillators. Each operator can have one of 8 different waveforms as supported by the OPL3 instead of just a simple sine or set of 4 modified sines as was supported by the original OPL and the OPL2 respectively.
+The OPAL instrument is an emulation of the FM synth "retro soundcards" of the PC DOS era. Each "OPAL" instrument is made up of 2 FM operators that can be in configured for either standard 2 OP FM or in parallel as 2 additive oscillators. Each operator can have one of 8 different waveforms as shown below.
 
-The OPAL instrument has settings that affect the emulated OPL chip as a while, some that affect a channel and others the affect a specific operator within a channel.
+The OPAL instrument has settings for both the instrument as a whole and per each of the 2 operators.
 
-On the OPAL instrument screen,you select which chann
+The picoTracker currently only supports up to 3 OPAL instruments. Because each of the instruments is a single monophonic voice, using the same instrument simultaneously in the picoTracker 8 track sequencer will work as if you were controlling an external monophonic synth via MIDI output and cause the following notes to cut off the previously playing note on that OPAL instrument.
 
-The picoTracker currently only supports up to 2 channels, so while more than 2 OPAL instruments can be created, they can only control one of the 2 available channels. Likewise because wash of the 2 channels is a single monophonic voice, using the same channel simultaneously in the picoTracker sequencer will work as if you were controlling an external monophonic synth via MIDI output and cause the following notes to cut off the previously playing note on that OPAL channel.
+### Instrument wide settings
+
+* Algorithm
+* Deep tremelo/vibrato
+* Feedback
+
+### Per Operator settings
+
+* Level
+* Multiplier
+* ADSR
+* Shape
+* TR / VB / SU / KSR
+* Keyscale
+
