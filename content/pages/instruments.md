@@ -73,9 +73,21 @@ A MIDI instrument has the following settings:
 
 ## Synths
 
-### CSID
+### SID
 
-![screen capture of OPAL instrument screen](/image/sid-screen-small.png)
+![screen capture of SID instrument screen](/image/sid-screen-small.png)
+
+* **VPW:**
+* **WF:**
+* **Sync:**
+* **Ring:**
+* **ADSR:**
+* **filter:**
+* **Flt cut:**
+* **Flt res:**
+* **Flt mode:**
+* **volume:**
+
 
 ### OPAL
 
@@ -89,16 +101,18 @@ The picoTracker currently only supports up to 3 OPAL instruments. Because each o
 
 ### Instrument wide settings
 
-* Algorithm
-* Deep tremelo/vibrato
-* Feedback
+* **Algorithm:** Select either 2 Operator FM `(1*2)` or Additive `(1+2)`
+* **Deep tremelo/vibrato:** Enable/disable Deep tremelo or vibrato effect
+* **Feedback:** Turn on/off feedback for Operator 1
 
 ### Per Operator settings
 
-* Level
-* Multiplier
-* ADSR
-* Shape
-* TR / VB / SU / KSR
-* Keyscale
+* **Level:** Operator output level **attenuation**, hence 0 is *highest* output level
+* **Multiplier:** Frequency multiplier, `0=1/2, 1=1, 2=2, 3=3` etc
+* **A/D/S/R:** Attack/Decay/Sustain/Release, each is single digit 0-15 value
+* **Shape:** Waveform share, 8 to choose from, see waveform drawings below
+* **TR/VB/SU/KSR:**  Tremelo, Vibrato, Sustain and Envelope Scaling (KSR)
+* **Keyscale:** Attenuates output level towards higher pitch: `1=3.0 dB/oct, 2=1.5 dB/oct, 3=6.0 dB/oct`
+
+![screen capture of OPAL instrument screen](/image/opal-waveforms-small.png)
 
