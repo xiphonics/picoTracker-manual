@@ -13,6 +13,9 @@
         <a href="getting-started.html">
             <li>Getting Started</li>
         </a>
+        <a href="device.html">
+            <li>Device settings</li>
+        </a>
         <a href="projects.html">
             <li>Projects</li>
         </a>
@@ -39,9 +42,6 @@
         </a>
         <a href="mixer.html">
             <li>The Mixer</li>
-        </a>
-        <a href="device.html">
-            <li>Device settings</li>
         </a>
         <li>
             <h2>Reference</h2>
