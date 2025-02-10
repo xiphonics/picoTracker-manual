@@ -1,3 +1,5 @@
+## THIS IS OUTDATED AND THE PICOTRACKER USER MANUAL IS NOW HOSTED [IN THE MAIN PICOTRACKER REPO](https://github.com/xiphonics/picotracker)
+
 # Picotracker Manual
 
 ## Development
